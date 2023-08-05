@@ -6,5 +6,5 @@ function mostrarSaludo() {
     alert('¡Hola!');
 }
 
-const miDiv = document.getElementById('miDiv');
+const miDiv = document.getElementById('Boton');
 miDiv.addEventListener('click', mostrarSaludoDiv);
