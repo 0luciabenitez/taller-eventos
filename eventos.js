@@ -6,5 +6,13 @@ function mostrarSaludo() {
     alert('¡Hola!');
 }
 
-const miDiv = document.getElementById('Boton');
-miDiv.addEventListener('click', mostrarSaludoDiv);
+document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById("container").addEventListener("click", function(){
+        alert("Hola! Soy el div");
+    });
+
+    document.getElementById("boton").addEventListener("click", (e) =>{
+        e.stopPropagation();
+    })
+})
+
